@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                //$('.slider').bxSlider 에서 bxslider를 소문자로 쓰면 안됨
+                auto: true,   //슬라이드 자동 실행 여부, false하면 자동실행 안됨
+                mode: 'fade'  //슬라이드 방향 설정 (기본 horizontal), vertical, fade
+                //사진 사이즈는 wrap에서 조절해주면 됨
+            });
+        });
+
+    </script>
+
+    <title>슬라이드</title>
+</head>
+<body>
+    <div id="wrap">
+        <ul class="slider">
+            <li><img src="img/tree-1.png" alt="풍경"></li>
+            <li><img src="img/tree-2.png" alt="풍경"></li>
+            <li><img src="img/tree-3.png" alt="풍경"></li>
+            <li><img src="img/tree-4.png" alt="풍경"></li>
+            <li><img src="img/tree-5.png" alt="풍경"></li>
+            <li><img src="img/tree-6.png" alt="풍경"></li>
+        </ul>
+        <p>bxslider</p>
+    </div>
+</body>
+</html>
